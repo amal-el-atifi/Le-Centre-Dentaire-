@@ -1,0 +1,217 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond générale */
+    color: #333; /* Couleur du texte par défaut */
+}
+
+/* Style pour le header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #87CEFA; /* Bleu clair */
+    padding: 20px;
+    border-bottom: 2px solid #00008B; /* Bleu foncé pour le contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+}
+
+header .logo img {
+    width: 130px; /* Ajustement de la taille du logo */
+    height:auto;
+}
+
+header h1 {
+    margin: 15px 0;
+    color: #fffefe;
+    font-size: 25px; /* Taille de police pour le titre */
+}
+
+header h2 {
+    margin: 20px 0;
+    color: rgb(10, 10, 10);
+    font-size:18px; /* Taille de police pour le sous-titre */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right; /* Centre les éléments de navigation */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #311fce; /* Couleur du texte pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dd4e0c; /* Couleur des liens au survol */
+    transform: scale(1.1);
+}
+
+/* Style pour les sections */
+section {
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 1200px; /* Largeur maximale pour la mise en page */
+    background-color: #f9fafc;
+    border: 2px solid #fcfcfc; /* Bordure bleu clair */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(238, 230, 230, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(20, 20, 20, 0.2);
+}
+
+section h2 {
+    color: #00008B; /* Bleu foncé pour les titres de section */
+    border-bottom: 2px solid #87CEFA; /* Bordure bleu clair */
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 22px; /* Taille de police pour les sous-titres */
+}
+
+section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+section ul li {
+    margin: 5px 0;
+    font-size: 20px; /* Taille de police pour les éléments de liste */
+}
+
+/* Style pour les images principales */
+.main-image {
+    width: 100%;
+    max-width: 300px; /* Largeur maximale réduite pour les images */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(245, 241, 241, 0.2);
+    margin: 20px 0;
+}
+
+/* Style général du footer */
+footer {
+    background-color: #87CEFA; /* Bleu clair */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #00008B; /* Bordure bleu foncé */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    color: white; /* Couleur du texte du footer */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 16px; /* Taille de police pour le texte du footer */
+}
+
+#contact-footer {
+    margin-top: 50px;
+}
+
+#contact-footer h2 {
+    color: black; /* Couleur du texte du titre dans le footer */
+    margin-bottom: 20px;
+}
+
+#contact-footer p {
+    color: black; /* Couleur du texte des informations de contact */
+    font-size: 20px;
+}
+
+/* Style pour le formulaire d'avis */
+.testimonial-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-form label {
+    font-weight: bold;
+}
+
+.testimonial-form input,
+.testimonial-form textarea,
+.testimonial-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0c0c0c;
+}
+
+.testimonial-form button {
+    background-color: #90e1f5; /* Bleu foncé */
+    color: rgb(252, 8, 8);
+    border: none;
+    cursor: pointer;
+}
+
+.testimonial-form button:hover {
+    background-color: #f70a0a;
+}
+
+/* Animation et style des messages de confirmation */
+.show-message {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#formResponse, #testimonialResponse {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 10px;
+    background-color: rgb(28, 29, 29);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.show-message.show {
+    opacity: 1;
+}
+
+/* Animation pour les avis ajoutés */
+.testimonial {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.testimonial.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
